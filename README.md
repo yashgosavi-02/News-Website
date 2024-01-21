@@ -28,5 +28,6 @@ If you would like to contribute to the project, please follow these steps:
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
+
 <img width="676" alt="image" src="https://github.com/yashgosavi-02/News-Website/assets/90139024/6ebd5717-ec0c-48c5-8c0a-1a07f3fde5ec">
 
