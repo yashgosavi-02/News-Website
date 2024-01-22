@@ -6,9 +6,23 @@ window.addEventListener("load", () => fetchNews("India"));
 function reload() {
     window.location.reload();
 }
-
+/*
 async function fetchNews(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    const data = await res.json();
+    bindData(data.articles);
+}
+*/
+async function fetchNews(query) {
+    let apiUrl;
+    
+    if (query === "India") {
+        apiUrl = `${url}India&apiKey=${API_KEY}`;
+    } else {
+        apiUrl = `${url}everything?q=${query}&apiKey=${API_KEY}`;
+    }
+
+    const res = await fetch(apiUrl);
     const data = await res.json();
     bindData(data.articles);
 }
